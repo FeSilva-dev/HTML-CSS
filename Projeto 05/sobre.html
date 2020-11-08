@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/venda.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Projeto 05</title>
+</head>
+<body>
+    <header style="border-bottom: 3px solid rgb(255, 96, 96);">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.jpg" alt=""></a>
+            </div><!--logo-->
+
+            <nav class="mobile">
+                <h2><i class="fas fa-bars"></i></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a style="color: red;"  href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                </ul>
+            </nav><!--mobile-->
+
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a style="color: red;" href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                </ul>
+            </nav><!--desktop-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <section class="sobre">
+        <div class="line-tittle">
+            <div class="ln1"></div>
+            <h2>Sobre nós</h2>
+        </div><!--line-tittle-->
+
+        <div class="container">
+            <div class="img-sobre"></div><!--img-sobre-->
+            <div class="descricao">
+                <h2>LM Veiculos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a justo ex. Sed ac odio ornare, ullamcorper nulla a, commodo erat. 
+                Donec eu dolor a mauris consectetur vestibulum. Nam malesuada urna quis sapien aliquam, quis venenatis felis vestibulum. 
+                Cras nec eros in justo pulvinar venenatis nec id erat. Curabitur non nibh non neque egestas molestie. Nulla ultricies metus in diam tristique sodales. 
+                Duis consequat mi et quam ornare, eget mollis enim lacinia. Fusce in consequat velit.</p>
+            </div><!--descricao-->
+
+            <div class="descricao2">
+                <div class="img-small"></div>
+                <div class="descricao-autor">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a justo ex. Sed ac odio ornare, ullamcorper nulla a, commodo erat. 
+                    Donec eu dolor a mauris consectetur vestibulum. Nam malesuada urna quis sapien aliquam, quis venenatis felis vestibulum. 
+                </div><!--descricao-autor-->
+            </div><!--descricao2-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--sobre-->
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a style="color: red;" href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                </ul>
+            </nav>
+            <p>Todos os direitos reservados</p>
+            <div class="clear"></div>
+        </div><!--container-->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $('nav.mobile h2').click(function(){
+            $('nav.mobile ul').slideToggle()
+        })
+    </script>
+</body>
+</html>

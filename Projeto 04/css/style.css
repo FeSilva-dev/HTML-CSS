@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{height: 100%;}
+
+.clear{clear: both;}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{padding: 20px 2%; background-color: rgb(221, 221, 221);}
+
+.logo img{float: left; width: 236px;}
+
+.logo a{
+    text-decoration: none;
+}
+
+.mobile h2{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mobile{float: right;}
+
+nav.menu-mobile{display: none;}
+
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    z-index: 999;
+}
+
+nav.menu-mobile li:hover{background-color: rgb(175, 175, 175);}
+
+nav.menu-mobile li{
+    list-style-type: none;
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+    display: block;
+}
+
+nav.menu-mobile a{text-decoration: none; color: black; display: block;}
+
+
+.desktop nav{
+    float: right;
+}
+
+.desktop nav ul{
+    list-style: none;
+}
+
+.desktop nav ul li{
+    padding: 10px 0;
+    display: inline-block; 
+    margin: 0 20px; 
+} 
+
+.desktop a{text-decoration: none; color: black;}
+
+.mosaico{margin-top: 10px;}
+
+.mosaico-single{
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: red;
+    border: 5px solid white;
+}
+
+section.servicos > .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+.box-servico h2{
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.box-servico p{
+    color: white;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.box-servico i{color: white; margin-top: 10px; font-size: 25px;}
+
+section.servicos > .container .box-servico:nth-of-type(1){
+    width: 30%;
+    padding: 25px 2%;
+    text-align: center;
+    background-color: #576975;
+}
+
+section.servicos > .container .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 60px 2%;
+    text-align: center;
+    background-color: #5e87a3;
+}
+
+section.servicos > .container .box-servico:nth-of-type(3){
+    width: 30%;
+    padding: 25px 2%;
+    text-align: center;
+    background-color: #576975;
+}
+
+section.perfil-container{padding: 40px 2%;}
+
+section.perfil-container .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil-container .container{
+    max-width: 1000px;
+}
+
+section.perfil-container .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+section.perfil-container .img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/img_perfil.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+    width: 60%;
+    padding: 20px 30px;
+}
+
+section.perfil-container .texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+section.videos{padding: 70px 2%;}
+
+section.videos .box-videos{
+    position: relative;
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    border: 5px solid white;
+}
+
+section.videos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.tratamentos{padding: 40px 2%; background-color: rgb(230, 230, 230);}
+section.tratamentos .text{text-align: center; color: rebeccapurple; margin-bottom: 20px;}
+
+section.tratamentos .tratamento-single{
+    float: left;
+    width: 33.3%;
+    padding: 50px 2%;
+}
+
+section.tratamentos .tratamento-single p{margin-top: 10px;}
+
+section.depoimentos{padding: 70px 2%;}
+section.depoimentos > .container{padding: 40px 0; max-width: 400px;}
+section.depoimentos > h2{
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 20px;
+}
+
+section.depoimentos .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+section.depoimentos .depoimento-single quote{font-size: 15px; color: #b4b4b4;}
+
+section.depoimentos .depoimento-single .nome-depoimento{padding: 20px 0;}
+section.depoimentos .depoimento-single .nome-depoimento img{width: 32px; height: 32px;}
+section.depoimentos .depoimento-single .nome-depoimento span{font-size: 13px; color: #b4b4b4; display: inline-block; vertical-align: top; position: relative; top: 5px;}
+
+.insta-chamada{padding: 40px 2%; background-color: #98a5ae; width: 100%; float: left; text-align: center; color: white;}
+
+.insta-chamada a{text-decoration: none; color: white; font-size: 50px;}
+
+.face-chamada{padding: 40px 2%; background-color: #344c5c; width: 100%; float: left; text-align: center; color: white;}
+
+.face-chamada a{text-decoration: none; color: white; font-size: 50px;}
+
+.mosaico-social{width: 100%; float: left;}
+
+.img-mosaico-wraper{width: calc(100% / 8); float: left; padding-top: calc(100% / 8); background-color: red; border: 6px solid white;}
+
+section.form-contato{padding: 60px 2%; background-color: #98a5ae;}
+section.form-contato > h2 {color: #2291db; text-align: center; font-size: 18px;}
+
+section.form-contato form{
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.w100, .w50 span{
+    font-size: 13px;
+    color: black;
+}
+
+.form-wraper{float: left; padding: 0 5px;}
+
+.w100{width: 100%;}
+
+.form-wraper input{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 10px;
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.w50{width: 50%;}
+
+.form-wraper textarea{
+    margin-top: 8px;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+}
+
+.form-wraper input[type=submit]{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    color: white;
+    background-color: #344c5c;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-social{padding: 40px 2%; background-color: rgb(147, 184, 209);}
+
+.infos{
+    width: 33.3%; 
+    float: left;
+    padding: 0 2%;
+}
+
+.footer{padding: 20px 2%; background-color: rgb(114, 154, 180); text-align: center;}
+
+
+/* AQUI COMEÇA AS MEDIA QUERRY */
+
+@media screen and (max-width: 1024px){
+    .img-mosaico-wraper{width: calc(100% / 5); padding-top: calc(100% / 5);}
+
+    .mosaico-social > div:nth-of-type(1n+6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .desktop{display: none;}
+    nav.menu-mobile{display: block;}
+
+    section.servicos > .container{flex-direction: column;}
+
+    section.servicos > .container .box-servico:nth-of-type(1){
+        width: 90%;
+        max-width: 470px;
+        padding: 30px 2%;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(2){
+        width: 94%;
+        max-width:500px;
+        padding: 40px 2%;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 470px;
+        padding: 30px 2%;
+    }
+
+    section.perfil-container .perfil-wraper{padding-top: 0;}
+
+    section.perfil-container .perfil-wraper2{
+        flex-direction: column;
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        position: static;
+    }
+
+    section.perfil-container .img-perfil{
+        width: 50%;
+        padding-top: 70%;
+        height: auto;
+        display: inline-block; 
+    }
+    
+    section.perfil-container .texto-perfil{
+        display: inline-block;
+        text-align: justify;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    section.videos{text-align: center;}
+    section.videos .box-videos{
+        float: none;
+        display: inline-block;
+        width: 70%;
+        padding-top: calc(70% * 0.6);
+        border: 5px solid white;
+    }
+    
+    section.videos iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section.tratamentos .tratamento-single{
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .img-mosaico-wraper{width: calc(100% / 3); padding-top: calc(100% / 3);}
+
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section.perfil-container .img-perfil{
+        width: 80%;
+        padding-top: 100%;
+    }
+
+    section.videos .box-videos{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+        border: 5px solid white;
+    }
+    
+    section.videos iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .w50{width: 100%;}
+}

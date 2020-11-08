@@ -1,0 +1,86 @@
+section.sobre{padding: 60px 2% 40px 2%;}
+
+section.sobre .container{
+    max-width: 840px;
+    margin-top: 30px;
+}
+
+section.sobre .line-tittle h2{
+    position: relative;
+    text-align: center; 
+    font-size: 24px; 
+    font-style: italic;
+    display: inline-block;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.line-tittle{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.ln1{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    top: 20px;
+}
+
+section.sobre .img-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-color: #ccc;
+}
+
+section.sobre .descricao{
+    margin-top: 30px;
+}
+
+section.sobre .descricao h2{
+    font-size: 24px;
+}
+
+.descricao p{
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.descricao2{margin-top: 40px;}
+
+.img-small{
+    width: 25%;
+    float: left;
+    padding-top: 25%;
+    background-color: #ccc;
+}
+
+.descricao-autor{
+    float: left;
+    width: 75%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 580px){
+    .img-small{
+        float: none;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .descricao-autor{
+        float: none;
+        width: 100%;
+        max-width: none;
+        padding: 10px 2%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 01</title>
+    <script>
+        function mascara(telefone){ 
+           if(telefone.value.length == 0)
+                telefone.value = '(' + telefone.value;
+            if(telefone.value.length == 3)
+               telefone.value = telefone.value + ') ';
+        
+            if(telefone.value.length == 10)
+                telefone.value = telefone.value + '-';
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><h2>Danki.code</h2></div>
+            <div class="clear"></div>
+        </div><!--container-->
+    </header><!--header-->
+
+    <section class="container-banner">
+        <div class="container">
+            <div class="bg"> 
+                <h2>Conheça nossos diferenciais</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+            </div><!--bg-->
+            
+            <form>
+                <h2>Preencha o formulario e inicie sua caminhada para se tornar um webmaster!</h2>
+                <p>Nome:*</p>
+                <input type="text" name="nome" placeholder="Digite seu nome:">
+                <p>Email:*</p>
+                <input type="email" name="email" placeholder="Digite seu email:">
+                <p>Telefone:*</p>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone:" size="20" maxlength="15" onkeypress="mascara(this)"/>
+                <span>* Campos obrigatorios</span>
+                <div class="submit">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--container-banner-->
+
+    <section class="text">
+        <div class="container">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ex, efficitur id elit non, pellentesque tristique diam. Quisque sit amet dolor in mauris rutrum varius. 
+                Cras lobortis risus nec nisl hendrerit tincidunt non posuere risus. Curabitur pharetra justo eu mollis feugiat. Nam pharetra sapien sit amet enim pulvinar maximus. 
+                Quisque aliquet vestibulum interdum. Nulla bibendum magna a risus blandit lacinia. Suspendisse potenti. Maecenas egestas, mauris ac vulputate fringilla, neque mi congue odio, 
+                et ullamcorper nibh ipsum viverra massa. In hac habitasse platea dictumst.</p>
+            <div class="arrow"></div>
+        </div><!--container-->
+    </section><!--text-->
+
+    <section class="sobre">
+        <div class="container">
+            <h2>Aprenda com quem está no mercado</h2>
+            <div class="icons">
+                <div class="diferenciais">
+                    <img src="images/icon.png" alt="" srcset="">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ex, efficitur id elit non, pellentesque tristique diam. Quisque sit amet dolor in mauris rutrum varius. Quisque sit amet dolor in mauris rutrum varius.</p>
+                </div><!--diferenciais-->
+
+                <div class="diferenciais">
+                    <img src="images/icon.png" alt="" srcset="">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ex, efficitur id elit non, pellentesque tristique diam. Quisque sit amet dolor in mauris rutrum varius. Quisque sit amet dolor in mauris rutrum varius.</p>
+                </div><!--diferenciais-->
+
+                <div class="diferenciais">
+                    <img src="images/icon.png" alt="" srcset="">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ex, efficitur id elit non, pellentesque tristique diam. Quisque sit amet dolor in mauris rutrum varius. Quisque sit amet dolor in mauris rutrum varius.</p>
+                </div><!--diferenciais-->
+            </div><!--icon-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </section>
+
+    <div class="line"></div>
+
+    <footer>
+       <p>Todos os direitos reservados - Danki.code</p>
+       <p>Rua Humberto Marçal - Vila Calu - São Paulo - SP</p>
+    </footer>
+</body>
+</html>

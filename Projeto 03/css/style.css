@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{clear: both;}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 2%;
+    width: 100%;
+    height: 90vh;
+    max-height: 800px;
+    min-height: 800px;
+    background-image: url(../images/capa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{float: left;}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo h2{font-size: 30px;}
+
+nav.mobile{display: none;}
+
+nav.mobile h2{color: white; cursor: pointer; font-size: 30px;}
+
+nav.mobile ul{
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+}
+
+nav.mobile li{
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.mobile li:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+nav.mobile a{color: black; text-decoration: none; display: block;}
+
+
+header nav{float: right;}
+
+header ul{list-style: none;}
+
+header nav.desktop li{
+    padding: 0 20px;
+    float: left;
+}
+
+header nav.desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.desktop ul{
+    position: relative;
+    top: 8px;
+}
+
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 160px;
+}
+
+.chamada1 h2{
+    color: white;
+    font-size: 40px;
+}
+
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+}
+
+section.section1{
+    width: 100%;
+    background-color: #472562;
+    padding: 0 2%;
+    height: 400px;
+}
+
+.section1 .container{
+    max-width: 1000px;
+}
+
+.text-section{
+    width: 50%;
+    float: left;
+    color: white;
+    margin-top: 60px;
+    padding-left: 80px;
+}
+
+.text-section h2{
+    font-size: 26px;
+}
+
+.text-section p{
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.text-section ul{
+    font-size: 17px;
+    list-style: inside;
+    margin-top: 5px;
+}
+
+.text-section li{margin-top: 8px;}
+
+.btn1{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 115, 0);
+    width: 160px;
+    height: 44px;
+    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.device-section{
+    float: left;
+    width: 50%;
+    background-image: url(../images/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 430px;
+    position: relative;
+    top: -30px;
+}
+
+section.section2{
+    padding: 40px 2%;
+    text-align: center;
+}
+
+section.section2 h2{ color: #472663;}
+
+.section2 p{
+    margin-top: 20px;
+    max-width: 1000px;
+    display: inline-block;
+}
+
+.section2 .container{max-width: 1000px;}
+
+.section2 img{
+    position: relative;
+    top: 100px;
+    width: 100%;
+}
+
+.section3{width: 100%;}
+
+.wraper-part1{
+    float: right;
+    max-width: 600px;
+}
+
+.part1{
+    float: left;
+    width: 50%;
+    padding: 90px 2%;
+    background-color: #835fa7;
+    color: white;
+}
+
+.part1 h2{font-size: 26px;}
+
+.part1 p{
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.part2{
+    float: left;
+    width: 50%;
+    padding: 90px 2%;
+}
+
+.sobre{
+    float: left;
+    max-width: 600px;
+    padding-left: 15px;
+}
+
+.tittle-author{
+    float: left;
+    width: 100%;
+}
+
+
+.wraper-tittle-author{
+    float: left;
+    padding-right: 10px;
+}
+
+.wraper-tittle-author p{font-style: italic;}
+
+
+.tittle-author .img-author{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.slide{
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 12px;
+}
+
+.slide span{
+    height: 16px;
+    width: 16px;
+    background-color: gray;
+    border-radius: 8px;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.part2 .text-author p{width: 100%; float: left; margin-top: 10px;}
+
+section.section4{
+    width: 100%;
+    background-color: #472563;
+    padding: 40px 2%;
+}
+
+.form{
+    float: left;
+    width: 50%;
+}
+
+.form h2{
+    color: white;
+    font-size: 23px;
+}
+
+.form p{
+    font-size: 15px;
+    color: white;
+    max-width: 400px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type=text],
+.form form input[type=email]{
+    width: 100%;
+    max-width: 480px;
+    height: 50px;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.form form textarea{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    height: 160px;
+    resize: none;
+    padding: 10px 10px;
+    outline: none;
+}
+
+.form form input[type=submit]{
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border: none;
+}
+
+.map{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+}
+
+.map h2{
+    color: white;
+    font-size: 27px;
+}
+
+.map-js{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    border: 5px solid black;
+}
+
+footer{
+    color: white;
+    padding: 20px 2%;
+    background: #192123;
+    font-size: 17px;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+}
+
+@media screen and (max-width: 560px){
+    nav.desktop{display: none;}
+    nav.mobile{display: block;}
+}
+
+@media screen and (max-width: 630px){
+    .part1{
+        width: 100%;
+        padding: 50px 2%;
+    }
+
+    .part2{
+        width: 100%;
+        padding: 50px 2%;
+    }
+
+    .sobre{padding-left: 0;}
+
+    .slide{padding-left: 0;}
+
+    .section2 img{
+        top: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: auto;
+        min-height: 60vh;
+    }
+
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 180px 0;
+    }
+
+    section.section1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .text-section{
+        padding-left: 0;
+        width: 100%;
+        display: inline-block;
+        float: none;
+        margin-top: 0;
+        position: static;
+    }
+
+    .text-section ul{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .text-section li{
+        float: none;
+        text-align: left;
+    }
+
+    .btn1{display: inline-block;}
+    .device-section{display: none;}
+
+    .section4 .container{
+        text-align: center;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
+    .form form{margin-top: 20px;}
+
+    .form p{display: inline-block;}
+
+    .map{
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+    
+    .map{margin-top: 30px;}
+
+    .map-js{
+        display: inline-block; 
+        text-align: center; 
+        margin-top: 30px;
+        height: 450px;
+    }
+
+    footer{text-align: center;}
+
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 10px;
+    }
+}

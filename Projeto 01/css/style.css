@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{height: 100%;}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    padding: 25px 0;
+    background-color: #212343;
+}
+
+.logo{
+    font-size: 20px;
+    color: white;
+}
+
+section.container-banner{
+    width: 100%;
+    height: 557px;
+    background-image: url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.container-banner > .container{height: 100%;}
+
+form{
+    padding: 10px;
+    top: -15px;
+    position: relative;
+    float: right;
+    /* width: 400px; */
+    width: 35%; /*PARA FICAR MAIS RESPOPNSIVO*/
+    height: calc(100% + 30px);
+    background-color: white;
+    border: 5px solid #ccc;
+}
+
+form h2{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #999999;
+}
+
+form p{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #999999;
+}
+
+form input[type=text], [type=email], [type=tel]{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+form span{
+    color: #999999;
+    font-size: 17px;
+    padding-top: 30px;
+    display: block;
+}
+
+form .submit{
+    text-align: center;
+}
+
+form input[type=submit]{
+    background-color: purple;
+    border: none;
+    color: white;
+    height: 55px;
+    /*width: 256px;*/
+    width: 70%; /**PARA FICAR MAIS RESPOPNSIVO*/
+    margin-top: 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 8px;
+    border-bottom: 8px solid rgb(65, 0, 65);
+}
+
+section.container-banner div.bg{
+    margin-top: 80px;
+    width: 55%;
+    background-color: rgba(33, 35, 67, 0.7); 
+    padding: 20px 20px;
+    float: left;
+}
+
+.bg h2{color: white;}
+
+.bg ul{
+    color: white;
+    padding-top: 20px;
+    
+}
+
+.bg li{
+    padding-left: 10px;
+    margin-left: 25px;
+    padding-bottom: 20px;
+}
+
+section.text{
+    background-color: rgb(179, 179, 179);
+    padding: 40px 2%;
+}
+
+.text h2{
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.text p{
+    font-weight: normal;
+    padding-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.arrow{
+    background-image: url(../images/arrow.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+section.sobre{
+    background-color: rgb(233, 233, 233);
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.sobre h2{
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.icons{
+    margin-top: 45px;
+}
+
+.diferenciais{
+    width: 33.3%;
+    padding: 40px 25px;
+    float: left;
+}
+
+.diferenciais h2{
+    font-weight: normal;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.diferenciais p{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(109, 109, 109);
+}
+
+footer{
+    padding: 20px 0;
+    background-color: #212343;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px){
+    section.container-banner{
+        width: 100%;
+        padding: 20px 2%;
+        height: auto;
+    }
+
+    form{
+        width: 40%;
+        top: 0;
+    }
+
+    form input[type=submit]{
+        /*width: 256px;*/
+        width: 70%; /**PARA FICAR MAIS RESPOPNSIVO*/
+        margin-top: 15px;
+        padding-top: 8px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    section.container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+    }
+
+    section.container-banner div.bg{
+        margin-top: 0;
+        width: 100%;
+        padding: 20px 20px;
+        float: none;
+    }
+
+    form{
+        padding: 10px;
+        top: 0;
+        margin: 15px auto;
+        float: none;
+        /* width: 400px; */
+        width: 60%;
+        height: auto;
+    }
+
+    .diferenciais{
+        width: 100%;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Projeto 05</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.jpg" alt=""></a>
+            </div><!--logo-->
+
+            <nav class="mobile">
+                <h2><i class="fas fa-bars"></i></h2>
+                <ul>
+                    <li><a style="color: red;" href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li id="contato"><a href="index.html">Contato</a></li>
+                </ul>
+            </nav><!--mobile-->
+
+            <nav class="desktop">
+                <ul>
+                    <li><a style="color: red;" href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li id="contato"><a href="index.html">Contato</a></li>
+                </ul>
+            </nav><!--desktop-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="text-banner">
+                <div class="text-single">Consultoria</div><!--text-single-->
+                <div class="text-single">Compra</div><!--text-single-->
+                <div class="text-single">Venda</div><!--text-single-->
+                <div class="text-single">feliper.silva011@icloud.com</div><!--text-single-->
+            </div><!--text-banner-->
+        </div><!--container-->
+    </section><!--banner-->
+
+    <section class="veiculos-destaque">
+        <div class="line-tittle">
+            <div class="ln1"></div>
+            <h2>Veiculos em destaque</h2>
+        </div><!--line-tittle-->
+
+        <div class="container">
+            <div class="vitrine-destaque">
+                <div style="background-image: url(./images/charger.jpg);" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Dodge Charger R / T</h2>
+                    <P>1.6 8V, Gasolina, Manual, carro de corrida</P>
+                    <a class="btn1" href="veiculo-single.html">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url(./images/opala.jpg);" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Dodge Charger R / T</h2>
+                    <P>1.6 8V, Gasolina, Manual, carro de corrida</P>
+                    <a class="btn1" href="veiculo-single.html">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url(./images/fusca.jpg);" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Dodge Charger R / T</h2>
+                    <P>1.6 8V, Gasolina, Manual, carro de corrida</P>
+                    <a class="btn1" href="veiculo-single.html">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+            <div class="clear"></div>
+        </div><!--container-->
+
+    </section><!--veiculos-destaque-->
+
+    <section class="servicos-descricao">
+        <div class="half1">
+            <div class="half1-wraper">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Compra</li>
+                    <li>Venda</li>
+                    <li>Consultoria de Veiculos</li>
+                    <li>Consignação</li>
+                    <li>Indicacao de mecanico e peças</li>
+                </ul>
+                <a class="btn1" href="">Saiba Mais</a>
+            </div><!--half1-wraper-->
+        </div><!--half1-->
+
+        <div class="half2">
+            <h2>Depoimentos</h2>
+            <div class="depoimento-single">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec elementum tortor. Nunc et ipsum ullamcorper, placerat est vel, tristique lacus. 
+                Curabitur ac massa tincidunt, interdum enim eget, aliquet turpis.</p>
+                <div class="navigation">
+                    <i class="fas fa-arrow-circle-left"></i>
+                    <i class="fas fa-arrow-circle-right"></i>
+
+                    <div class="nome-depoimento">Joao da Silva</div>
+                </div><!--navigation-->
+
+            </div><!--depoimento-single-->
+        </div><!--half2-->
+    </section><!--servicos-descricao-->
+
+    <section class="form-contato">
+        <div class="line-tittle">
+            <div class="ln1"></div>
+            <h2>ENTRE EM CONTATO</h2>
+        </div><!--line-tittle-->
+        <div class="container">
+            <form action="">
+                <div class="input-wraper w100">
+                    <input type="text" name="nome" placeholder="Nome">
+                </div><!--w100-->
+                <div class="input-wraper w50">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-wraper w50">
+                    <input type="tel" name="telefone" placeholder="Telefone">
+                </div>
+
+                <div class="input-wraper w100">
+                   <textarea placeholder="Digite sua mensagem"></textarea>
+                </div><!--w100-->
+
+                <div class="input-wraper w100">
+                    <div class="btn-form">
+                        <input type="submit" value="Enviar">
+                    </div><!--btn-form-->
+                </div><!--w100-->
+            </form>
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--form-contato-->
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a style="color: red;" href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                </ul>
+            </nav>
+            <p>Todos os direitos reservados</p>
+            <div class="clear"></div>
+        </div><!--container-->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $('nav.mobile h2').click(function(){
+            $('nav.mobile ul').slideToggle()
+        })
+    </script>
+</body>
+</html>

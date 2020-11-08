@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.clear{clear: both;}
+
+header{
+    padding: 10px 2%;
+    width: 100%;
+    background-color: #494949;
+}
+
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/draven-draven.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.logo2{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/draven-draven.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+section.bg{width: 100%;}
+
+.img{
+    background-image: url(../images/draven2.jpg);
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+
+.form1{
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(199, 198, 198);
+}
+
+.form-container h2{
+    color: white;
+    padding: 15px;
+    font-size: 23px;
+    background-color: rgb(145, 145, 145);
+}
+
+.form-container form{
+    margin-top: 15px;
+    padding: 0 2%;
+}
+
+.form-container p{
+    color: rgb(94, 93, 93);
+    font-size: 16px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    height: 45px;
+    padding: 10px 5px;
+    margin-top: 5px;
+}
+
+.form-wraper{margin-top: 30px;}
+
+.submit{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.submit input[type=submit]{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-wraper2{margin-top: 20px;}
+
+section.chamada{
+    width: 100%;
+    text-align: center;
+}
+
+section.chamada .container{
+    padding: 30px 2%;
+    background-color: rgb(20, 20, 20);
+}
+
+section.chamada h2{
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+}
+
+section.chamada h3{
+    color: white;
+    margin-top: 15px;
+}
+
+section.pictures{margin-top: 10px;}
+
+.board{
+    display: flex;
+    margin-top: 10px;
+}
+
+.w70{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 350px;
+}
+
+.w30{
+    padding: 30px;
+    width: 40%;
+    background-color: rgb(94, 93, 93);
+}
+.w30 p{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+footer .container{
+    padding: 20px;
+    background-color: gray;
+    text-align: center;
+}
+
+footer img{
+    border-radius: 40px;
+    width: 120px;
+}
+
+@media screen and (max-width: 960px){
+    .img{
+        text-align: center;
+        padding: 30px;
+    }
+
+    .form1{
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+        float: none;
+        margin-right: 0;
+    }
+
+    .form-wraper{
+        margin-top: 15px;
+    }
+
+    .form-wraper p{
+        text-align: left;
+    }
+
+    .form-wraper2{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+
+    [class^="logo"]{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+
+    .form-wraper2{
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .img{
+        text-align: center;
+
+    }
+
+    .form1{
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 826px){
+    .board{
+        display: block;
+    }
+
+    .w30{width: 100%;}
+    .w30 p{margin-top: 0;}
+    .w70{width: 100%;}
+}

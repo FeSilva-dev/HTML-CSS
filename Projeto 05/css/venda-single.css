@@ -1,0 +1,171 @@
+section.venda-single{padding: 80px 2% 0 2%;}
+
+section.venda-single .line-tittle h2{
+    position: relative;
+    text-align: center; 
+    font-size: 24px; 
+    font-style: italic;
+    display: inline-block;
+    background-color: white;
+    padding: 0 20px;
+}
+
+section.venda-single .line-tittle{max-width: 1280px;}
+
+section.venda-single > .container{
+    padding: 40px 2% 0 2%;
+    max-width: 1400px;
+    text-align: center;
+}
+
+.bread{
+    padding: 10px 0;
+    text-align: left;
+}
+
+.bread a{text-decoration: none; color: black;}
+.bread span{padding: 0 20px;}
+.bread a:last-child{color: red;}
+
+.info-veiculo{
+    display: inline-block;
+    width: 60%;
+}
+
+.descricao-veiculo{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 40px 15px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.descricao-veiculo > .btn1{
+    margin-left: 0;
+    margin-top: 15px;
+    padding-top: 8px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(216, 60, 60);
+    color: white;
+    text-decoration: none;
+}
+
+.descricao-veiculo p{
+    text-align: justify;
+    margin-top: 15px;
+    max-width: 200px;
+}
+
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-galeria{
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-galeria-parent{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+.arrow-left{
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+}
+
+.arrow-right{
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+}
+
+.nav-galeria-wraper{
+    width: 200%;
+}
+
+.mini-img-wraper{
+    float: left;
+    padding: 9px;
+    width: calc(33.3% * (100 / 200));
+}
+
+.mini-img{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+    background-color: green;
+}
+
+section.veiculos-destaque{
+    padding: 40px 2% 80px 2%;
+}
+
+section.veiculos-destaque .line-tittle{max-width: 1280px;}
+
+.vitrine-destaque{margin-top: 40px;}
+
+section.veiculos-destaque .btn1{
+    margin-top: 15px;
+}
+
+section.form-contato{padding: 80px 2% 0 2%;}
+
+section.form-contato .line-tittle h2{
+    position: relative;
+    text-align: center; 
+    font-size: 24px; 
+    font-style: italic;
+    display: inline-block;
+    background-color: white;
+    padding: 0 20px;
+}
+
+section.form-contato .line-tittle{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+@media screen and (max-width: 768px){
+    .info-veiculo{width: 100%;}
+    .descricao-veiculo p{max-width: none;}
+    .descricao-veiculo{text-align: center;}
+    .descricao-veiculo a{display: inline-block;}
+}
+
+@media screen and (max-width: 580px){
+    section.veiculos-destaque {text-align: center;}
+
+    .vitrine-destaque{
+        float: none;
+        display: inline-block;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .vitrine-destaque a{display: inline-block;}
+}
+
+@media screen and (max-width: 480px){
+    .vitrine-destaque{width: 100%;}
+}
