@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+}
+
+a{text-decoration: none;}
+
+/**CLASSES BOT CSS**/
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.right{text-align: right;}
+
+/**BOT CSS**/
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+/*HEADER DO SITE*/
+
+header{
+    background-color: rgb(147, 0, 245);
+    padding: 30px 0;
+}
+
+header > .center{
+    display: flex;
+}
+
+.logo{
+    font-size: 21px;
+    color: white;
+    width: 50%;
+}
+
+.menu{
+    text-align: right;
+    width: 50%;
+}
+
+.menu ul{list-style: none;}
+.menu li{display: inline; padding-left: 20px;font-size: 17px;}
+.menu li a{color: white;}
+
+/*FIM DO HEADER*/
+
+/*INICIO BG*/
+
+section.texto-bg{
+    background-color: rgb(40, 0, 185);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+section.texto-bg i{font-size: 41px;color: rgb(231, 66, 107);margin-bottom: 15px;}
+
+section.texto-bg h2,
+section.texto-bg h3{
+    font-weight: normal;
+    margin: 15px auto;
+}
+section.texto-bg h2 > b{color: rgb(231, 66, 107);}
+
+/*FIM BG*/
+
+/*INICIO LOJA*/
+
+section.loja{padding: 30px 0;}
+
+section.loja > .center{display: flex; flex-wrap: wrap; max-width: 1400px;}
+
+.box-single{border: 1px solid #555;height: 100%;}
+
+.box-single img{max-width: 100%;}
+
+.loja-wraper{
+    width: 33.3%;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+}
+
+.box-single h2{
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: normal;
+}
+
+.box-single p{
+    font-size: 15px;
+    padding: 8px 8px;
+}
+
+.loja-wraper a{
+    background-color: #5fb382;
+    width: 100%;
+    text-align: center;
+    padding: 15px 30px;
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.stars{padding: 10px 8px;}
+
+.stars i{
+    font-size: 15px;
+    color: rgb(255, 136, 0);
+}
+
+/*INICIO LOJA*/
+
+/*INICIO NOVIDADES E DEPOIMENTOS*/
+
+section.novidades{padding: 30px 0;}
+
+.w50 h1{
+    font-size: 23px;
+    font-weight: normal;
+    color: #4b4b4b;
+    margin-bottom: 15px;
+}
+ 
+.box-noticia h2{
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: rgb(30, 30, 30);
+}
+
+.box-noticia{
+    padding: 20px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.box-noticia p{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(30, 30, 30);
+}
+
+.depoimentos ul{list-style: inside;}
+
+.depoimentos li{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/*FIM NOVIDADES E DEPOIMENTOS*/
+
+footer{
+    padding: 20px 0;
+    background: #3c2e58;
+    color: white;
+}
+/**MEDIA SCREEN**/
+
+@media screen and (max-width:768px){
+    .loja-wraper{
+        width: 50%;
+        padding: 30px 20px;
+    }
+    
+    .w50{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:568px){
+    .loja-wraper{
+        width: 100%;
+        max-width: 400px;
+        margin:10px auto;
+    }   
+}

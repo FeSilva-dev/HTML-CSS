@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Projeto 1</title>
+</head>
+<body>
+   <!--AQUI COMEÇA O MENU-->
+    <header>
+    <div class="border">
+        <div class="container">
+             <div class="logo"><a href="index.html"><h2>Felipera</h2></a></div>
+                 <nav class="menu-desktop">
+                     <ul>
+                         <li>
+                             <a href="index.html">Home</a>
+                         </li>
+                         <li> 
+                             <a href="sobre.html">Sobre</a>
+                         </li>
+                         <li class="selected">
+                             <a href="contato.html">Contato</a>
+                         </li>
+                     </ul>
+                 </nav><!--desktop-->
+                 <nav class="menu-mobile">
+                     <h2><i class="fa fa-bars"></i></h2>
+                     <ul>
+                         <li>
+                             <a href="index.html">Home</a>
+                         </li>
+                         <li>
+                             <a href="sobre.html">Sobre</a>
+                         </li>
+                         <li class="select-mobile">
+                             <a href="contato.html">Contato</a>
+                         </li>
+                     </ul>    
+                 </nav><!--mobile-->
+             <div class="clear"></div>
+         </div><!--border-->
+    </div><!--container-->
+    </header>
+<!--AQUI ACABA O MENU--> 
+
+    <section style="background-image: url('images/draven.jpg');" class="tittle-page">
+        <div class="overlay__tittle-page"></div>
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Lorem ipsum sama itu dolor lorem ipsum e o melhor sistema do brasil pois eugosto muito delee ee u tetstou escrtevendo muitas coisa gostosas</p>
+        </div><!--container-->
+    </section><!--tittle-page-->
+
+    <section class="contato">
+        <div class="container">
+            <div class="w60 formulario">
+                <h2>Entre em contato e estaremos respondendo o mais breve possivel</h2>
+                <form action="" method="POST">
+                    <div class="w50">
+                        <input type="text" name="Nome" placeholder="Nome" required>
+                    </div>
+                    <div class="w50">
+                        <input type="text" name="Sobrenome" placeholder="Sobrenome" required>
+                    </div>
+                    <div class="w100">
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="w100">
+                        <textarea name="Mensagem" placeholder="Deixe sua mensagem:" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div><!--w60-->
+
+            <div class="w40 tags-form">
+                <h2><i class="fas fa-comment"></i>Fale com nosso Suporte</h2>
+                <p>lorem ipsum it salama dorlor skayhys le com nosso Suporte le com nosso Suporte le</p>
+                <p class="tag-contato"><i class="fa fa-phone"></i>(11) 95495-5256</p>
+                <p class="tag-contato"><i class="fab fa-facebook"></i>/fehh_rs</p>
+                <p class="tag-contato"><i class="fab fa-instagram"></i>@fehh_rs</p>
+            </div>
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--contato-->
+
+    <footer class="footer1">
+        <div class="container">
+            <div class="w33">
+                <h2>Aonde Estamos</h2>
+                <p><i class="fas fa-map-marker-alt"></i>R. Fulano de tal</p>
+                <p><i class="fas fa-phone-alt"></i>(11)95495-5256</p>
+            </div><!--w33-->
+
+            <div class="w33">
+                <h2>Links Uteis</h2>
+                <p>Facebook</p>
+                <p>Google</p>
+                <p>Site.com</p>
+            </div><!--w33-->
+
+            <div class="w33">
+                <h2>Redes Sociais</h2>
+                <p><a href="http://instagram.com/fehh_rs" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></i>Instagram</p>
+                <p><a href="http://facebook.com/bixcolacha" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></i>Facebook</p>
+                <p><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>LinkedIn</p>
+            </div><!--w33-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </footer><!--footer1-->
+
+    <footer class="footer2">
+        <p>Todos os direitos reservados</p>
+    </footer><!--footer2-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
+</body>
+</html>
